@@ -1,0 +1,22 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Project logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Large media (optional - recommended to host externally)
+# Video Project.mp4
+# *.zip
+
+# AI Planning/System artifacts (Keep local only)
+.planning/
+.planning.zip
+task.md
+walkthrough.md
+implementation_plan*.md
+*.webp
+*.png
+!new video frame/*.png

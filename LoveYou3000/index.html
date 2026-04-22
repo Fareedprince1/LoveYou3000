@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD Fariduddin — Full Stack Developer</title>
+  <meta name="description" content="Portfolio of MD Fariduddin — Full Stack Developer based in Ballari, India. Open to Work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;700&family=Inter:wght@300;400;600&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── Loader ── -->
+  <div class="loader" id="loader">
+    <span class="loader__text" id="loader-text">0%</span>
+    <div class="loader__bar"><div class="loader__fill" id="loader-fill"></div></div>
+  </div>
+
+  <!-- ── Cinematic Canvas (Full Immersive) ── -->
+  <div class="cinema" id="cinema">
+    <canvas class="cinema__canvas" id="canvas"></canvas>
+  </div>
+  <div class="cinema__progress" id="cinema-progress"></div>
+  <div class="cinema__hint" id="cinema-hint">
+    <span class="cinema__hint-text">Scroll</span>
+    <div class="cinema__hint-line"></div>
+  </div>
+
+  <!-- ── Scroll Spacer (drives the animation) ── -->
+  <div class="scroll-spacer" id="scroll-spacer"></div>
+
+  <!-- ── Portfolio ── -->
+  <div class="portfolio" id="portfolio">
+
+    <!-- Nav -->
+    <nav class="nav" id="nav">
+      <div class="container nav__inner">
+        <span class="nav__brand">MD Fariduddin</span>
+        <ul class="nav__links" role="list">
+          <li><a href="#about"    class="nav__link">About</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#skills"   class="nav__link">Skills</a></li>
+          <li><a href="#contact"  class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__content">
+        <span class="hero__label reveal">Portfolio // 2025</span>
+        <h1 class="hero__heading reveal">
+          Full Stack<br><em>Developer</em>
+        </h1>
+        <p class="hero__sub reveal">
+          Ballari, India
+          <span class="hero__badge">Open to Work</span>
+        </p>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-text">Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <span class="section__label reveal">01 — About</span>
+        <div class="about__grid reveal">
+          <div class="about__year">2021</div>
+          <div class="about__bio">
+            <p>I'm Fariduddin — a full-stack developer who builds precise, high-performance digital products. I care deeply about the intersection of clean engineering and intentional design.</p>
+            <p>Currently based in Ballari, India. Available for freelance projects, full-time roles, and interesting collaborations.</p>
+          </div>
+        </div>
+        <div class="about__stats reveal-stagger">
+          <div class="about__stat">
+            <span class="about__stat-num" data-count="50">0</span>
+            <span class="about__stat-label">Projects Completed</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num" data-count="3000" data-suffix="+">0</span>
+            <span class="about__stat-label">Lines of Code</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num" data-count="5">0</span>
+            <span class="about__stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <span class="section__label reveal">02 — Work</span>
+        <h2 class="projects__heading reveal">Selected<br><em>Work</em></h2>
+        <div class="bento reveal-stagger">
+          <a href="#" class="bento__card">
+            <span class="bento__card-idx">P_01</span>
+            <h3 class="bento__card-title">Stark HUD<br><em>System</em></h3>
+            <div class="bento__card-footer">
+              <span class="bento__card-cat">Interface Design</span>
+              <span class="bento__card-year">2024</span>
+            </div>
+          </a>
+          <a href="#" class="bento__card">
+            <span class="bento__card-idx">P_02</span>
+            <h3 class="bento__card-title">Ekaathava<br><em>Web App</em></h3>
+            <div class="bento__card-footer">
+              <span class="bento__card-cat">Creative Dev</span>
+              <span class="bento__card-year">2024</span>
+            </div>
+          </a>
+          <a href="#" class="bento__card">
+            <span class="bento__card-idx">P_03</span>
+            <h3 class="bento__card-title">Love You<br><em>3000</em></h3>
+            <div class="bento__card-footer">
+              <span class="bento__card-cat">Animation Engine</span>
+              <span class="bento__card-year">2025</span>
+            </div>
+          </a>
+          <a href="#" class="bento__card">
+            <span class="bento__card-idx">P_04</span>
+            <h3 class="bento__card-title">OSS<br><em>Cores</em></h3>
+            <div class="bento__card-footer">
+              <span class="bento__card-cat">Contribution</span>
+              <span class="bento__card-year">2023</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise -->
+    <section id="skills" class="section">
+      <div class="container">
+        <span class="section__label reveal">03 — Expertise</span>
+        <h2 class="expertise__heading reveal">Technical<br><em>Expertise</em></h2>
+        <div class="expertise__grid reveal-stagger">
+          <div class="expertise__card">
+            <span class="expertise__card-idx">01</span>
+            <h4 class="expertise__card-title">Front-end Engine</h4>
+            <p class="expertise__card-desc">React, Next.js, and high-performance animation systems using Three.js and Canvas.</p>
+          </div>
+          <div class="expertise__card">
+            <span class="expertise__card-idx">02</span>
+            <h4 class="expertise__card-title">Backend Core</h4>
+            <p class="expertise__card-desc">Node.js, PostgreSQL, and scalable cloud architecture across AWS and GCP.</p>
+          </div>
+          <div class="expertise__card">
+            <span class="expertise__card-idx">03</span>
+            <h4 class="expertise__card-title">Creative Dev</h4>
+            <p class="expertise__card-desc">Specializing in immersive HUD interfaces and interactive cinematic experiences.</p>
+          </div>
+          <div class="expertise__card">
+            <span class="expertise__card-idx">04</span>
+            <h4 class="expertise__card-title">UI/UX Strategy</h4>
+            <p class="expertise__card-desc">Architectural design systems focused on accessibility and premium aesthetics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="contact__heading reveal">
+          Let's Build<br><em>Something</em>
+        </h2>
+        <a href="mailto:hi@fariduddin.com" class="contact__email reveal">
+          hi@fariduddin.com
+        </a>
+        <div class="contact__socials reveal">
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact__social">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact__social">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="footer__copy">© 2025 MD Fariduddin</span>
+        <span class="footer__credit">Made with intention.</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
